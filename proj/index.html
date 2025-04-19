@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Irfan's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Irfan Khan</h1>
+    <p>Creative Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button onclick="toggleMode()">🌓 Toggle Theme</button>
+  </nav>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card" onclick="openModal('Vanilla Movie', 'A movie browsing app with infinite scroll, carousels, and user login – made using HTML, CSS & JavaScript.', 'https://github.com/Irfankhan-123/vanilla_movie')">
+        <img src="./img/Screenshot 2025-04-19 141647.png" alt="Vanilla Movie">
+        <p>Vanilla Movie</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <a id="modal-link" href="#" target="_blank">🔗 View Project</a>
+    </div>
+  </div>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Irfan Khan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
